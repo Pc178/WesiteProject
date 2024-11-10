@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4Marks Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Store</title>
+
+    <link rel="icon" href="Logo.jpg" type="image/x-icon">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <h1>Devices Store</h1>
+    <img src="Logo.jpg" alt="PC Store Logo" id="logo">
+   
+
+</header>
+<header>
+    <h1>4Marks Store</h1>
+    <p>Choose your high-performance Device</p>
+</header>   
+
+<body>
+
+
+    <!-- Product Grid -->
+    <div id="product-grid">
+        <!-- Gaming PCs Section -->
+        <h2>Gaming PCs</h2>
+        <div class="category">
+            <!-- Product Examples -->
+            <div class="product" onclick="showProductDetail('Challenger 1', 'pc1.png', 1500, {GPU: 'NVIDIA RTX 3080', CPU: 'Intel i9-11900K', RAM: '32GB', PowerSupply: '750W', Cooler: 'Corsair iCUE', Case: 'NZXT H510', Storage: '1TB SSD'})">
+                <img src="pc1.png" alt="Challenger ">
+                <h3>Challenger 1</h3>
+                <p>$1500</p>
+            </div>
+            <div class="product" onclick="showProductDetail('F22', 'pc2.jpg', 1200, {GPU: 'NVIDIA GTX 1660 Ti', CPU: 'AMD Ryzen 5 3600', RAM: '16GB', PowerSupply: '600W', Cooler: 'Cooler Master Hyper 212', Case: 'Corsair Carbide', Storage: '512GB SSD'})">
+                <img src="pc2.jpg" alt="F22">
+                <h3>F22</h3>
+                <p>$1200</p>
+            </div>
+            <div class="product" onclick="showProductDetail('T90 Tank', 'pc3.jpg', 1800, {GPU: 'NVIDIA RTX 3090', CPU: 'Intel i9-12900K', RAM: '64GB', PowerSupply: '1000W', Cooler: 'NZXT Kraken Z73', Case: 'Fractal Design Meshify 2', Storage: '2TB SSD'})">
+                <img src="pc3.jpg" alt="T90 Tank">
+                <h3>T90 Tank</h3>
+                <p>$1800</p>
+            </div>
+            <div class="product" onclick="showProductDetail('Spend your money', 'pc4.jpg', 1300, {GPU: 'NVIDIA RTX 3070', CPU: 'AMD Ryzen 7 5800X', RAM: '32GB', PowerSupply: '750W', Cooler: 'Noctua NH-D15', Case: 'Phanteks P400A', Storage: '1TB SSD'})">
+                <img src="pc4.jpg" alt="Spend your money">
+                <h3>Spend your money</h3>
+                <p>$1300</p>
+            </div>
+        </div>
+
+        <!-- Gaming Laptops Section -->
+        <h2>Gaming Laptops</h2>
+        <div class="category">
+            <!-- Laptop Examples -->
+            <div class="product" onclick="showProductDetail('Apple MacBook Pro1', 'laptop1.jpg', 1500, {GPU: 'NVIDIA RTX 3060', CPU: 'Intel i7-10750H', RAM: '16GB', PowerSupply: '180W', Cooler: 'Dual Fan Cooling', Storage: '512GB SSD', Camera: '1080p' , Screen: '14.2-inch Liquid XDR 3024 x 1964 (120Hz)' , Battery: '70Wh lithium up to 17 hours'})">
+                <img src="laptop1.jpg" alt="Apple MacBook Pro1">
+                <h3>Apple MacBook Pro1</h3>
+                <p>$1500</p>
+            </div>
+            <div class="product" onclick="showProductDetail('Dell XPS 13', 'laptop2.jpg', 1200, {GPU: 'NVIDIA GTX 1660 Ti', CPU: 'AMD Ryzen 7 4800H', RAM: '16GB', PowerSupply: '150W', Cooler: 'Advanced Cooling', Storage: '1TB SSD', Camera: ' 720p HD' , Screen: ' 13.4-inch FHD+ (1920 x 1200) or 4K UHD+ (3840 x 2400) InfinityEdge touch display' , Battery: '52Wh lithium  up to 12 hours'})">
+                <img src="laptop2.jpg" alt="Dell XPS 13">
+                <h3>Dell XPS 13</h3>
+                <p>$1200</p>
+            </div>
+            <div class="product" onclick="showProductDetail('HP Spectre x360', 'laptop3.jpg', 1800, {GPU: 'NVIDIA RTX 3070', CPU: 'Intel i9-11900H', RAM: '32GB', PowerSupply: '200W', Cooler: 'Cooler Boost 5', Storage: '1TB SSD' , Camera: ' 720p HD' , Screen: '13.3-inch FHD (1920 x 1080) or 4K UHD (3840 x 2160) OLED touch display' , Battery: ' 66Wh lithium up to 13'})">
+                <img src="laptop3.jpg" alt="HP Spectre x360">
+                <h3>HP Spectre x360</h3>
+                <p>$1800</p>
+            </div>
+            <div class="product" onclick="showProductDetail('Lenovo ThinkPad X1 Carbon', 'laptop4.jpg', 1300, {GPU: 'NVIDIA GTX 1650', CPU: 'Intel i5-10300H', RAM: '8GB', PowerSupply: '120W', Cooler: 'Standard Cooling', Storage: '256GB SSD' , Camera: ' 720p HD' , Screen: '14-inch FHD (1920 x 1080) or 4K UHD (3840 x 2160)' , Battery: '57Wh lithium up to 15 hours'})">
+                <img src="laptop4.jpg" alt="Lenovo ThinkPad X1 Carbon">
+                <h3>Lenovo ThinkPad X1 Carbon</h3>
+                <p>$1300</p>
+            </div>
+        </div>
+
+        <!-- Mobile Phones Section -->
+        <h2>Mobile Phones</h2>
+        <div class="category">
+            <!-- Mobile Phone Examples -->
+            <div class="product" onclick="showProductDetail('Xiaomi Mi 11', 'mobile1.jpg', 700, {Screen: '6.5-inch OLED', CPU: 'Snapdragon 888', RAM: '8GB', Battery: '4500mAh', Camera: '108MP + 12MP + 8MP', Storage: '128GB'})">
+                <img src="mobile1.jpg" alt="Xiaomi Mi 11">
+                <h3>Xiaomi Mi 11</h3>
+                <p>$700</p>
+            </div>
+            <div class="product" onclick="showProductDetail('Apple iPhone 12 Pro Max', 'mobile2.jpg', 800, {Screen: '6.8-inch OLED', CPU: 'A14 Bionic', RAM: '6GB', Battery: '3800mAh', Camera: '12MP + 12MP + 12MP', Storage: '256GB'})">
+                <img src="mobile2.jpg" alt="Apple iPhone 12 Pro Max">
+                <h3>Apple iPhone 12 Pro Max</h3>
+                <p>$800</p>
+            </div>
+            <div class="product" onclick="showProductDetail('Samsung Galaxy S21', 'mobile3.jpg', 650, {Screen: '6.4-inch LCD', CPU: 'Exynos 2100', RAM: '8GB', Battery: '5000mAh', Camera: '64MP + 8MP', Storage: '128GB'})">
+                <img src="mobile3.jpg" alt="Samsung Galaxy S21">
+                <h3>Samsung Galaxy S21</h3>
+                <p>$650</p>
+            </div>
+            <div class="product" onclick="showProductDetail('Huawei Mate 30 Pro', 'mobile4.jpg', 750, {Screen: '6.1-inch OLED', CPU: 'Kirin 990', RAM: '8GB', Battery: '4200mAh', Camera: '50MP + 40MP + 12MP', Storage: '256GB'})">
+                <img src="mobile4.jpg" alt="Huawei Mate 30 Pro">
+                <h3>Huawei Mate 30 Pro</h3>
+                <p>$750</p>
+            </div>
+            
+        </div>
+    </div>
+    
+    <!-- Product Detail Page -->
+    <div id="product-detail">
+        <div class="product-detail-content">
+            <button id="back-to-products" onclick="closeProductDetail()">Back to Products</button>
+            <img id="detail-image" src="" alt="Product Image">
+            <div class="detail-info">
+                <h2 id="detail-title"></h2>
+                <div id="detail-price"></div>
+                <div id="finalPrice"></div>
+                <div id="detail-specs">
+                    <h3>Specifications:</h3>
+                    <!-- Dynamic content based on product specifications -->
+                    <p><strong>Screen:</strong> <span id="screen"></span></p>
+                    <p><strong>GPU:</strong> <span id="gpu"></span></p>
+                    <p><strong>CPU:</strong> <span id="cpu"></span></p>
+                    <p><strong>RAM:</strong> <span id="ram"></span></p>
+                    <p><strong>Battery:</strong> <span id="battery"></span></p>
+                    <p><strong>Camera:</strong> <span id="camera"></span></p>
+                    <p><strong>Storage:</strong> <span id="storage"></span></p>
+                    
+                </div>
+                <input type="text" id="promoCode" placeholder="Enter Promo Code">
+                <button onclick="applyDiscount()">Apply Promo Code</button>
+                <button onclick="buyNow()">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <p>&copy; 2024 4Marks Store. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
