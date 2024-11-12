@@ -189,26 +189,32 @@ button:hover {
 
 
 #logo {
-    width: 150px; 
-    height:auto;
-    display: inline-block;
-    margin-right: 20px;
+    position: absolute; /* Position the logo */
+    left: 20px; /* Move it to the left */
+    top: 50%; /* Center vertically relative to header */
+    transform: translateY(-50%); /* Adjust vertical alignment */
+    width: 150px; /* Adjust size of the logo */
+    height: auto; /* Maintain aspect ratio */
 }
 
 header {
     display: flex;
-    align-items: center; /* Align the logo and text vertically */
-    justify-content: center; /* Center content */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center-align elements horizontally */
     background-color: #0d6efd;
     color: #fff;
-    padding: 2em 0;
+    padding: 1.5em;
+    position: relative; /* Enable positioning of the logo */
 }
 
 header h1 {
     font-size: 2.5em;
-    margin-bottom: 0.3em;
+    margin: 0 auto; /* Center-align the text */
+    flex-grow: 1; /* Allow the text to take up available space */
+    text-align: center; /* Center the text */
 }
 
 header p {
     font-size: 1.2em;
+    margin-top: 0.5em;
 }
