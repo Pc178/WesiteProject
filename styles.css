@@ -106,6 +106,13 @@ header p {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+.product-detail-content img {
+    max-width: 350px;
+    max-height: 300px;
+    object-fit: cover;
+    margin-top: 20px; /* Moves the image down */
+    margin-right: 2em; /* Keeps spacing between the image and other elements */
+}
 
 #back-to-products {
     position: absolute;
@@ -126,10 +133,9 @@ header p {
 
 .product-detail-content img {
     max-width: 350px;
+    margin-right: 2em;
     max-height: 300px;
     object-fit: cover;
-    margin-top: 20px; /* Moves the image down */
-    margin-right: 2em; /* Keeps spacing between the image and other elements */
 }
 
 .detail-info {
