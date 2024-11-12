@@ -190,7 +190,7 @@ button:hover {
 
 #logo {
     position: absolute; /* Position the logo */
-    left: 20px; /* Move it to the left */
+    left: 10px; /* Move it to the left */
     top: 50%; /* Center vertically relative to header */
     transform: translateY(-50%); /* Adjust vertical alignment */
     width: 150px; /* Adjust size of the logo */
